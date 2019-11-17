@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>OWLS Word Games Enhancer</title>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="jquery-ui-1.10.3.custom.min.js"></script>
+<script src="popup.js"></script>
+<script src="tinyeditor/tiny.editor.packed.js"></script>
+<link rel="stylesheet" href="tinyeditor/tinyeditor.css">
+
+<link type="text/css" href="css/south-street/jquery-ui-1.10.3.custom.min.css"
+	rel="stylesheet" charset="UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="popup-body">
+	<!--  <iframe
+		src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fowls-tile-tracker%2Fpdpejcfahhppmalemodibekpbiopmogo%3Fhl%3Den-US&amp;send=false&amp;layout=standard&amp;width=357&amp;show_faces=false&amp;font=tahoma&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=390735480949561"
+		scrolling="no" frameborder="0"
+		style="border: none; overflow: hidden; width: 357px; height: 20px;"
+		allowTransparency="true"></iframe>-->
+	<div id="updateAvailable"></div>
+	<div id="toolbar">
+	<div id="refreshButton" class="ui-icon ui-icon-refresh ui-state-highlight" title="Refresh"></div>
+	<a href="options.html" target="_blank"><div id="optionsButton" class="ui-icon ui-icon-gear ui-state-highlight" title="Options"></div></a>
+	<div id="closeButton" class="ui-icon ui-icon-close ui-state-highlight" title="Close"></div>
+	<a href="https://dalevross.github.io/OWLS_Word_Games_Enhancer.html#owlmain" target="_blank"><div id="helpButton" class="ui-icon ui-icon-help ui-state-highlight" title="Help"></div></a>
+	
+	<div id="version">
+	</div>
+	<div style="clear:both"></div></div>
+	<div class="heading" id="heading"></div>
+	<div id="tabs">
+		<ul>
+			<li><a href="#lexwstracker"><span>Board Info</span> </a></li>
+			<li><a href="#notes"><span>Notes</span> </a></li>
+			<li><a href="#settings"><span><img class='ui-icon ui-icon-gear'/>Settings</span> </a></li>
+		</ul>
+		<div id="lexwstracker"></div>
+		<div id="notes">
+			<div>
+				<div id="notestatus"></div>
+				<div id=btnHolder>
+					<button id="saveButton">Save</button>
+					<button id="deleteButton" class='ui-icon-error ui-state-highlight'>Delete</button>					
+				</div>
+			</div>
+			<textarea id="tinyeditor" style="width: 350px; height: 250px"></textarea>
+			<br/>
+			<!--<span id="saveWarning">*This note will be lost if it is not saved before the OWL closes</span>-->
+		</div>
+		<div id="settings">
+		<div>		
+		<div><input type="checkbox" name="notesFirst"><span>Show notes first if a note exists?</span></div>
+		<div><input type="checkbox" name="showTotals"><span>Show total number of tiles x /y?</span></div>
+		<div><input type="checkbox" name="allTiles"><span>Show all tiles with depleted tiles faded?</span></div>
+		<div style="padding-left: 20px"><input type="checkbox" name="useAllTilesLimit" /><span>Until <input type="number" name="allTilesLimit" min="1" max="80" value="20" /> tiles are left.</span></div>
+		<div><input type="checkbox" name="distinguishVowels"><span>Show vowels in another colour?</span></div>
+		<div><input type="checkbox" name="showValues"><span>Show letter values?</span></div>
+		<div><input type="checkbox" name="clickToSubmit"><span>Click to submit tiles?</span></div>
+		<div><input type="checkbox" name="showGrid"><span>Show grid references?</span></div>
+		<div><input type="checkbox" name="disableBingoPublishing"><span>Disable Bingo/Bonus Publishing?</span></div>
+		<div><input type="checkbox" name="storeGameData"><span>Store local copy of game information?</span></div>
+		<div><input type="checkbox" name="refreshEvery"><span>Refresh every <input type="number" maxlength="3" size="3" name="refreshInterval" min="15" max="300" value="30" /> when out of turns.</span></div>
+		<div><input type="checkbox" name="disableNoMoreGame"><span>Disable "No more games" popup</span></div>
+		<div style="padding-left: 20px"><input type="checkbox" name="refreshOnce"><span>and refresh once</span></div>
+		</div>
+		</div>
+		
+	</div>
+	<br />
+	<span style="font-size: 12px"> Join the Scrabble, Lexulous and
+		<br/> tournaments at<br /> <a
+		href="https://www.facebook.com/groups/ScrabulousTournamentGroup/"
+		target="_blank">OWLS</a> and <a
+		href="https://www.facebook.com/groups/scrabble.league/"
+		target="_blank">The Facebook Scrabble League</a> <br /> <br />Contact
+		<a href="https://www.facebook.com/owlswge" target="_blank">OWLS Word Games Enhancer</a> for support or suggestions <br />Share this extension:
+		http://tinyurl.com/free-tracker</span>
+	</div>
+</body>
+</html>
+

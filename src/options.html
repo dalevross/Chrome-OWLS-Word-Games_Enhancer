@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>OWLS Word Games Enhancer</title>
+<script src="jquery-2.0.3.min.js"></script>
+<script src="jquery-ui-1.10.3.custom.min.js"></script>
+<script src="jquery.dataTables.min.js"></script>
+<script src="jquery.browser.js"></script>
+<script src="jquery-bubble-popup-v3.min.js" type="text/javascript"></script>
+<script src="options.js"></script>
+<link type="text/css"
+	href="css/south-street/jquery-ui-1.10.3.custom.min.css"
+	rel="stylesheet" />
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="css/demo_table_jui.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="css/jquery-bubble-popup-v3.css" rel="stylesheet"
+	type="text/css" />
+
+
+</head>
+<body>
+	<div id="options-body" class="ui-widget-content">
+		<div id="toolbar">
+			<div id="refreshButton" class="ui-icon ui-icon-refresh"
+				title="Refresh"></div>
+			<div id="options-version"></div>
+			<div style="clear: both"></div>
+		</div>
+		<br /> <br />
+		<div id="accordion">
+			<h3>Settings</h3>
+			<div id="settings">
+				<div>
+					<div>
+						<input type="checkbox" name="notesFirst"><span>Show
+							notes first if a note exists?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="showTotals"><span>Show
+							total number of tiles x /y?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="allTiles"><span>Show
+							all tiles with depleted tiles faded?</span>
+					</div>
+					<div style="padding-left: 20px">
+						<input type="checkbox" name="useAllTilesLimit" /><span>Until
+							<input type="number" name="allTilesLimit" min="1" max="80"
+							value="20" /> tiles are left.</span>
+					</div>
+					<div>
+						<input type="checkbox" name="distinguishVowels"><span>Show
+							vowels in another colour?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="showValues"><span>Show
+							letter values?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="clickToSubmit"><span>Click
+							to submit tiles?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="showGrid"><span>Show
+							grid references?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="disableBingoPublishing"><span>Disable
+							Bingo/Bonus Publishing?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="storeGameData"><span>Store
+							local copy of game information?</span>
+					</div>
+					<div>
+						<input type="checkbox" name="refreshEvery"><span>Refresh
+							every <input type="number" maxlength="3" size="3"
+							name="refreshInterval" min="15" max="300" value="30" /> when out
+							of turns.</span>
+					</div>
+					<div>
+						<input type="checkbox" name="disableNoMoreGame"><span>Disable
+							"No more games" popup</span>
+					</div>
+					<div style="padding-left: 20px">
+						<input type="checkbox" name="refreshOnce"><span>and
+							refresh once</span>
+					</div>
+
+
+
+				</div>
+			</div>
+			<h3>Saved Notes</h3>
+			<div>
+				<div id="dialog-confirm" title="Delete Note(s)"></div>
+				<div id="notesListControls">
+					<button id="deleteSelected">Delete Selected Notes</button>
+					<button id="deleteAll">Delete All Notes</button>
+					<div style="clear: both"></div>
+				</div>
+				<div style="clear: both"></div>
+				<div id="notesContainer"></div>
+			</div>
+		</div>
+
+		<br /> <br />
+		<div id="footer">
+			<span style="font-size: 12px"> Join the Scrabble, Lexulous and
+				Wordscraper tournaments at<br /> <a
+				href="https://www.facebook.com/groups/ScrabulousTournamentGroup/"
+				target="_blank">OWLS</a> and <a
+				href="https://www.facebook.com/groups/scrabble.league/"
+				target="_blank">The Facebook Scrabble League</a> <br /> <br />Contact
+				<a href="https://www.facebook.com/DaJenGroup" target="_blank">DaJen
+					Group</a> for support or suggestions <br />Share this extension:
+				http://tinyurl.com/free-tracker</span>
+		</div>
+	</div>
+</body>
+</html>
+
